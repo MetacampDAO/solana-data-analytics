@@ -1,10 +1,10 @@
-import subscribeAccount from "./subscribeAccount";
-import parseCSV from "./parseCSV";
-import { connectedCluster } from "./connectToCluster";
+import subscribeAccount from "./helper/subscribeAccount";
+import parseCSV from "./helper/parseCSV";
+import { connectedCluster } from "./helper/connectToCluster";
 import { PublicKey } from '@solana/web3.js'
 
 
-const filePath = './lfntyAccounts.csv'
+const filePath = 'src/assets/lfntyAccounts.csv'
 
 // Subscribe from File Input
 async function updateFile(filePath: any) {
