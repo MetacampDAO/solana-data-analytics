@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+
+  solana-lifinity:
+    container_name: solana-lifinity
+    image: solana-lifinity:latest
+    restart: always
+    environment:
+      ES_HOST: ${ES_HOST}
+      ES_PORT: ${ES_PORT}
+      ES_INDEX: ${ES_INDEX}
+      ELASTIC_USERNAME: ${ELASTIC_USERNAME}
+      ELASTIC_PASSWORD: ${ELASTIC_PASSWORD}
+      RPC_ENDPOINT: ${RPC_ENDPOINT}
+      ASSET_CSV_PATH: ${ASSET_CSV_PATH}
+
+    volumes:
+      - ./src/assets:/app/src/assets
+      - ./src/elasticsearch/certs:/app/src/elasticsearch/certs
