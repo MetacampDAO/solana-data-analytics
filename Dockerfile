@@ -16,4 +16,4 @@ WORKDIR /app
 COPY --from=0 /app .
 COPY . .
 
-CMD ["npx", "ts-node", "./src/scrapLfnty.ts" ]
+CMD ["npx", "ts-node", "./src/scrapData.ts" ]

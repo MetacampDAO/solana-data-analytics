@@ -12,4 +12,4 @@ ELASTIC_PASSWORD=XXX
 HTTPS_RPC_ENDPOINT=XXX
 WSS_RPC_ENDPOINT=XXX
 ASSET_CSV_PATH=src/assets/Assets.csv
-4. Run npx ts-node src/scrapLfnty.ts
+4. Run npx ts-node src/scrapData.ts

@@ -5,6 +5,9 @@ export const poolMappings : MappingTypeMapping = {
       "@timestamp": {
         "type": "date"
       },
+      "timeId": {
+        "type": "long"
+      },
       "amount": {
         "type": "float"
       },

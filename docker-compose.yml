@@ -2,9 +2,9 @@ version: '3'
 
 services:
 
-  solana-lifinity:
-    container_name: solana-lifinity
-    image: solana-lifinity:latest
+  solana-data:
+    container_name: solana-data
+    image: solana-data:latest
     restart: always
     environment:
       ES_HOST: ${ES_HOST}

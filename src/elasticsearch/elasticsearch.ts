@@ -7,6 +7,7 @@ import * as fs from 'fs';
 
 export interface Document {
     '@timestamp': Date,
+    timeId: number,
     provider: string,
     product: string,
     token: string,
@@ -84,6 +85,7 @@ export default async function es(provider: string, product : string, token : str
         'id': `${provider}_${product}_${token}_${Date.now()}`,
         document: { 
             '@timestamp': new Date(Date.now()),
+            timeId: Date.now(),
             provider,
             product,
             token,
