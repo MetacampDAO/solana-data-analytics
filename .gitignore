@@ -9,7 +9,7 @@ lerna-debug.log*
 # Environment variables
 .env
 src/assets/*
-# src/elasticsearch/certs
+src/elasticsearch/certs/
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
